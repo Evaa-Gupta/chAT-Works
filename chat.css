@@ -1,0 +1,52 @@
+body{
+    background: #CC95C0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#logindiv{
+   background: #dbb7d3;
+   border-radius: 15px;
+   float: none;
+   padding: 45px;
+   border: 3px #501042 ridge;
+   margin-top: 60px;
+}
+
+#login{
+   width: 70%; 
+   border-radius: 15px;
+}
+
+.logout{
+   margin-left: 20px;
+   margin-top: 20px;
+}
+
+.tick{
+   width: 20px;
+}
+
+#output{
+   padding: 10px;
+   width: 80%;
+   background: rgba(255, 255, 255, 0.4);
+   border-radius: 15px;
+}
+@font-face{
+   font-family: orangeJuice;
+   src: url(Orange.ttf);
+}
+
+@font-face{
+   font-family: Architect;
+   src: url(Architect.ttf);
+}
+
+#usernamebold{
+   font-weight: 750;
+   font-family:Architect;
+
+
+}

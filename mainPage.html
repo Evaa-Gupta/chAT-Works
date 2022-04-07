@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.utton>
+googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/b87otstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="stylesheet" href="chat.css">
+    <title>Welcome! Start chatting now!</title>
+
+    <style>
+        body{
+           background: #B993D6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9eb4e0, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#output{
+    background-color:#e2caf5;
+    padding: 10px;
+    width: 80%;
+    border-radius: 15px;
+}
+#title{
+  margin-top: -50px;
+
+}
+
+#roomdiv{
+    width: 16%;
+}
+
+.room_name{
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+    font-weight: 550;
+}
+.room_name:hover{
+    color: #002a69;
+}
+    </style>
+</head>
+<body>
+ <div> 
+<button onclick="logout()" class="btn btn-danger logout"> Logout</button>
+    <center>
+        <h3 id="title">Chat, Chat and Chat <sup><img src="logo.png"></sup></h3>   
+        <h4 id="welcome"></h4>
+        <div id="roomdiv" class="form-group">
+            <label>Add Room</label>
+            <input class="form-control" id="groupname" type="text" placeholder="Enter Group Name">
+            
+        </div>
+        <button id="createGroup" class="btn btn-success" onclick="addRoom()">Create Group</button>
+
+        <h4>Trending Public Groups</h4>
+        <div id="output">
+
+        </div>
+    </center>
+ </div>
+ <script src="mainPage.js"></script>
+</body>
+</html>

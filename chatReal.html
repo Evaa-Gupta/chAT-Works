@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="chat.css">
+
+    <title>Chat, Chat and Chat</title>
+    <style>
+        body{
+            background: #FFAFBD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc3a0, hsl(350, 100%, 84%));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+       
+    #messageControls{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 1%;
+    }
+    #message{
+        width: 80%;
+    }
+
+#send{
+    width: 5%;
+    
+}
+
+#image{
+    width: 100%;
+    height: 100%;
+}
+#output{
+    text-align: left;
+}
+    
+    </style>
+</head>
+
+<body>
+    <audio id="sound" src="Click.mp3"></audio>
+    <div>
+        <button onclick="logout()" class="btn btn-danger logout">Logout</button>
+        <center>
+            <h3 id="title">Chat, Chat and Chat <sup><img src="logo.png"></sup></h3>
+            <h4 id="roomName"></h4> 
+            <div id="output"></div>
+            </center>
+            </div>
+
+            <center>
+            <div id="messageControls">
+                <input id="message" type="text" class="form-control" placeholder="Enter message">
+                <button onclick="sound();  send()" id="send" class="btn btn-warning"><img id="image" src="https://img.icons8.com/external-soft-fill-juicy-fish/60/000000/external-send-contact-us-soft-fill-soft-fill-juicy-fish.png"/></button>
+            </div>
+            
+        </center>
+    </div>
+    <script src="chatReal.js"></script>
+</body>
+
+</html>
